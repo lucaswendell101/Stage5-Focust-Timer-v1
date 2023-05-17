@@ -1,0 +1,91 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  --cor-font: hsla(240, 6%, 21%, 1);
+}
+
+body{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.6166rem;
+  line-height: 14.88rem;
+  text-align: center;
+
+  max-width: 100vw;
+  
+  transform: translateY(50%);
+}
+main{
+  display: flex;
+  justify-content: space-between;
+  gap: 19.2rem;
+  margin: auto 35.6rem;
+
+  
+}
+
+.clock{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.controls{
+  margin-top: 1.7rem;
+  display: flex;
+ 
+  gap: 4rem;
+}
+
+.clock .time{
+  display: flex;
+  align-items: flex-end;
+  color: var(--cor-font);
+}
+
+.sounds-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 32px;
+
+}
+
+button{
+  border: none;
+  align-content: space-between;
+  gap: 3.2rem;
+  cursor: pointer;
+  background: none;
+}
+
+.hiden{
+  display: none;
+}
+
+
+.tree, .fire, .store, .rain{
+  position: relative;
+
+}
+.icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.addIcon svg path{
+  fill: #ffffff;
+}
+
+.addBg .bg svg path{
+  fill: #02799D;
+}
+
